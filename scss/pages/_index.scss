@@ -1,0 +1,245 @@
+.fondo-inicio{
+   background-image: url("../../img/fondo-principal4.png");
+    background-size: cover;
+    
+}
+
+.titulo-portafolio{
+    display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+    width: auto;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border-style:solid;
+  border-width: 2px;
+  border-color: rgb(79, 31, 124);
+
+
+
+&__titulo{
+    font-size: 1.5rem;
+    font-family: $tipografia-subtitulo;
+    animation: lazo-izquierda 2s ease-in-out infinite alternate, 
+    lazo-derecha 2s ease-in-out infinite alternate;
+      
+    }
+
+    @keyframes lazo-izquierda {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-30px); /* Movimiento hacia la izquierda */
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes lazo-derecha {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(30px); /* Movimiento hacia la derecha */
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+
+}
+@media (max-width:375px){
+    .titulo-portafolio__titulo{
+        font-size: 1.2rem;
+        
+    }
+}
+@media (min-width:375px) and (max-width:422px){
+
+    .titulo-portafolio__titulo{
+        font-size: 1.3rem;
+        
+    }
+}
+
+.cajap-presentacion{
+    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(5, 160px);
+    gap: 40px;
+
+}
+
+
+.caja-presentacion{
+    
+    display: flex;
+  align-items: center;
+  justify-content: center;
+padding-left:40px;
+padding-right: 40px;
+text-align: center;
+
+
+&__texto{
+    font-size: 1.5rem;
+font-style:unset;
+    color: yellow;
+    font-family: $tipografia-texto-importante;
+    background-image: linear-gradient(to right, hsl(69, 96%, 52%), #6b10a0de);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moverTexto 3s ease infinite;
+    animation-iteration-count: 1;
+}
+@keyframes moverTexto {
+    0% {
+        transform: translateY(20px); /* Sin movimiento al inicio */
+    }
+    50% {
+        transform: translateX(50px); /* Movimiento a la mitad de la animación */
+    }
+    100% {
+        transform: translateX(0); /* Volver al estado inicial al final */
+    }
+
+}
+
+
+}
+
+
+
+.caja-inicio-padre{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 200px;
+margin-bottom: 40px;
+}
+.caja-inicio{
+    height: 250px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    
+& img{
+    height: 250px;
+    width: auto;
+    border-radius: 25px;
+  
+}
+    
+
+
+
+}
+
+@media (min-width:510px){
+ 
+    .padre-portafolio{
+        display: flex;
+        justify-content: center;
+    }
+.titulo-portafolio{
+width: 500px;
+
+
+}
+
+.caja-inicio{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+
+    & img {
+        width: 500px;
+        border-radius: 30px;
+    }
+}
+
+
+
+}
+
+@media (min-width:800px) {
+
+    .titulo-portafolio{
+ margin-top: 100px;
+ height: 70px;
+ width: 650px;
+
+&__titulo{
+    font-size: 2rem;
+}
+
+
+    }
+    
+.caja-presentacion__texto{
+    font-size: 1.7rem;
+}
+
+.caja-presentacion__texto:hover{
+    transform: scale(1.3);
+}
+
+
+    .contenedor-inicio img{
+    width: 690px;
+    height: 530px;
+        transition: transform 0.1s ease-in-out;
+    }
+        img:hover{
+            transform: scale(1.1);
+        }
+}
+
+@media (min-width:1200px){
+
+.titulo-portafolio{
+height: 80px;
+width: 800px;
+margin-bottom: 100px;
+
+
+}
+
+
+.caja-presentacion{
+margin-top: 100px;
+margin-bottom: 250px;
+
+
+&__texto{
+font-size: 2.5rem;
+
+}
+
+}
+
+.caja-inicio{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 700px;
+    height: 580px;
+
+
+& img{
+
+    width: 700px;
+    height: 580px;
+
+}
+
+}
+
+
+}
