@@ -162,7 +162,7 @@ font-family: 'ADLaM Display'*/
   font-style: unset;
   color: yellow;
   font-family: "ADLaM Display";
-  background-image: linear-gradient(to right, hsl(69, 96%, 52%), rgba(107, 16, 160, 0.8705882353));
+  background-image: linear-gradient(to right, hsl(273, 100%, 62%), rgba(63, 146, 255, 0.3764705882));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: moverTexto 3s ease infinite;
@@ -479,6 +479,7 @@ font-family: 'ADLaM Display'*/
   font-family: "Alegreya SC";
   grid-column: 2/3;
   font-size: 1.3rem;
+  color: aliceblue;
 }
 .footer__imagen--mail {
   height: 30px;
@@ -487,6 +488,7 @@ font-family: 'ADLaM Display'*/
 }
 .footer__texto--mail {
   font-family: "ADLaM Display";
+  color: aliceblue;
 }
 .footer__caja2 {
   display: grid;
@@ -498,6 +500,7 @@ font-family: 'ADLaM Display'*/
   font-family: "Alegreya SC";
   grid-column: 2/3;
   font-size: 1.3rem;
+  color: aliceblue;
 }
 .footer__imagen--ig {
   height: 30px;
@@ -506,6 +509,7 @@ font-family: 'ADLaM Display'*/
 }
 .footer__texto--ig {
   font-family: "ADLaM Display";
+  color: aliceblue;
 }
 
 @media (min-width: 527px) {

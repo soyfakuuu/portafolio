@@ -22,6 +22,7 @@
      font-family: $tipografia-subtitulo;
      grid-column: 2/3;
      font-size: 1.3rem;
+     color: aliceblue;
     
  }
  
@@ -33,6 +34,7 @@
  
  &__texto--mail{
      font-family: $tipografia-texto-importante;
+     color: aliceblue;
  }
  
  
@@ -50,6 +52,7 @@
      font-family: $tipografia-subtitulo;
      grid-column: 2/3;
      font-size: 1.3rem;
+     color: aliceblue;
  }
  
  &__imagen--ig{
@@ -61,6 +64,7 @@
  
  &__texto--ig{
      font-family: $tipografia-texto-importante;
+     color: aliceblue;
  }
  
  }
