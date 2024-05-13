@@ -278,8 +278,8 @@ font-family: 'ADLaM Display'*/
 }
 
 .fondo-mdv {
-  background-image: url("img/fondoprincipal2.png");
-  background-size: cover;
+  background-image: url("../img/fondoprincipal2.png");
+  background-size: contain;
 }
 
 .fondo-vertical {
