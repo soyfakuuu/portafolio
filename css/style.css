@@ -460,6 +460,138 @@ font-family: 'ADLaM Display'*/
     font-size: 1.6rem;
   }
 }
+.padre-yt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja-yt {
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "video video video video" "imagen titulo titulo titulo " "imagen nombre visitas fecha";
+  background-color: rgba(14, 4, 4, 0.815);
+}
+.caja-yt__video {
+  height: 200px;
+  width: 400px;
+  grid-area: video;
+}
+.caja-yt__img {
+  height: 30px;
+  width: 30px;
+  border-radius: 40%;
+  grid-area: imagen;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.caja-yt__titulo {
+  color: aliceblue;
+  grid-area: titulo;
+}
+.caja-yt__nombre {
+  grid-area: nombre;
+}
+.caja-yt__visitas {
+  grid-area: visitas;
+}
+.caja-yt__fecha {
+  grid-area: fecha;
+}
+
+@media (min-width: 400px) {
+  .caja-yt {
+    height: 350px;
+  }
+  .caja-yt__video {
+    grid-column: 1/5;
+    width: 100%;
+    height: 250px;
+  }
+  .caja-yt__img {
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+  }
+  .caja-yt__titulo {
+    font-size: 1.5rem;
+  }
+  .caja-yt__nombre {
+    font-size: 1.2rem;
+  }
+  .caja-yt__visitas {
+    font-size: 1.2rem;
+  }
+  .caja-yt__fecha {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 700px) {
+  .padre-yt {
+    gap: 70px;
+  }
+  .caja-yt {
+    height: 600px;
+  }
+  .caja-yt__video {
+    height: 450px;
+  }
+  .caja-yt__img {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .caja-yt__titulo {
+    font-size: 1.9rem;
+  }
+  .caja-yt__nombre {
+    font-size: 1.3rem;
+  }
+  .caja-yt__visitas {
+    font-size: 1.3rem;
+  }
+  .caja-yt__fecha {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 850px) {
+  .vertical-yt-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .padre-yt {
+    width: 900px;
+  }
+  .caja-yt {
+    height: 800px;
+  }
+  .caja-yt__video {
+    height: 600px;
+  }
+  .caja-yt__img {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .caja-yt__titulo {
+    margin-top: 20px;
+    font-size: 2.3rem;
+  }
+  .caja-yt__nombre {
+    font-size: 1.7rem;
+  }
+  .caja-yt__visitas {
+    font-size: 1.7rem;
+  }
+  .caja-yt__fecha {
+    font-size: 1.7rem;
+  }
+}
 .fondo-pagina {
   background-image: url("../img/fondoprincipal2.png");
   background-size: cover;

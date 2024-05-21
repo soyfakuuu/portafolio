@@ -1,0 +1,190 @@
+.padre-yt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-yt{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+                       
+    "video video video video"
+    
+    "imagen titulo titulo titulo "
+    
+    "imagen nombre visitas fecha";
+    background-color: rgba(14, 4, 4, 0.815);
+
+
+&__video{
+    height: 200px;
+    width: 400px;
+    grid-area: video;
+    
+}
+
+    &__img{
+        height: 30px;
+        width: 30px;
+        border-radius: 40%;
+        grid-area: imagen;
+        margin-top: 50px;
+        margin-left: 10px;
+       
+    }
+
+    &__titulo{
+        
+        color: aliceblue;
+        grid-area: titulo;
+        
+    }
+
+    &__nombre{
+        grid-area: nombre;
+        
+    }
+
+    &__visitas{
+        grid-area: visitas;
+       
+    }
+
+    &__fecha{
+        grid-area: fecha;
+       
+    }
+
+}
+
+@media (min-width:400px){
+
+.caja-yt{
+    height: 350px;
+
+
+&__video{
+    grid-column: 1/5;
+    width: 100%;
+    height: 250px;
+}
+
+&__img{
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+}
+
+&__titulo{
+    font-size: 1.5rem;
+}
+
+&__nombre{
+font-size: 1.2rem;
+}
+
+&__visitas{
+    font-size: 1.2rem;
+}
+
+&__fecha{
+    font-size: 1.2rem;
+}
+
+
+}
+}
+
+@media (min-width:700px){
+
+.padre-yt{
+    gap: 70px;
+}
+
+.caja-yt{
+    height: 600px;
+
+&__video{
+    height: 450px;
+}
+
+&__img{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+&__titulo{
+font-size: 1.9rem;
+}
+
+&__nombre{
+    font-size: 1.3rem;
+    }
+    
+    &__visitas{
+        font-size: 1.3rem;
+    }
+    
+    &__fecha{
+        font-size: 1.3rem;
+    }
+    
+
+}
+
+}
+
+@media (min-width:850px){
+.vertical-yt-p{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.padre-yt{
+    width:900px ;
+}
+   
+
+.caja-yt{
+    height: 800px;
+
+
+    &__video{
+        height: 600px;
+    }
+    
+    &__img{
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+       margin-bottom: 20px;
+    }
+    
+    
+    &__titulo{
+        margin-top: 20px;
+    font-size: 2.3rem;
+    }
+    
+    &__nombre{
+        font-size: 1.7rem;
+        }
+        
+        &__visitas{
+            font-size: 1.7rem;
+        }
+        
+        &__fecha{
+            font-size: 1.7rem;
+        }
+
+
+}
+}
