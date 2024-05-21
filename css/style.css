@@ -501,6 +501,7 @@ font-family: 'ADLaM Display'*/
 
 .texto-importante {
   font-family: "ADLaM Display";
+  text-align: center;
 }
 
 @media (min-width: 800px) {
@@ -519,7 +520,6 @@ font-family: 'ADLaM Display'*/
   }
   .texto-importante {
     font-size: 1.5rem;
-    text-align: center;
   }
 }
 .footer {
