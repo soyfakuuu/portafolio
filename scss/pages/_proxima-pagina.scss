@@ -1,11 +1,11 @@
 .fondo-pagina{
     background-image: url("../img/fondoprincipal2.png");
+    background-size: cover;
 }
 
 .caja-pagina-p{
     display: flex;
     flex-direction: column;
-    background-color: rgb(37, 37, 37, 0.7);
     gap: 50px;
  }
 .caja-pagina{
@@ -44,4 +44,37 @@
 
 .texto-importante{
     font-family: $tipografia-texto-importante;
+}
+
+@media (min-width:800px){
+
+    .caja-pagina{
+        padding-left: 60px;
+        padding-right: 60px;
+   
+
+    &__titulo{
+        font-size: 3.4rem;
+    }
+
+&__subtitulo{
+    font-size: 2.5rem;
+}
+
+&__texto{
+    font-size: 1.5rem;
+}
+
+    }
+
+    .texto-importante{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width:850px){
+   
 }

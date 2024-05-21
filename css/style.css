@@ -462,12 +462,12 @@ font-family: 'ADLaM Display'*/
 }
 .fondo-pagina {
   background-image: url("../img/fondoprincipal2.png");
+  background-size: cover;
 }
 
 .caja-pagina-p {
   display: flex;
   flex-direction: column;
-  background-color: rgba(37, 37, 37, 0.7);
   gap: 50px;
 }
 
@@ -503,6 +503,25 @@ font-family: 'ADLaM Display'*/
   font-family: "ADLaM Display";
 }
 
+@media (min-width: 800px) {
+  .caja-pagina {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .caja-pagina__titulo {
+    font-size: 3.4rem;
+  }
+  .caja-pagina__subtitulo {
+    font-size: 2.5rem;
+  }
+  .caja-pagina__texto {
+    font-size: 1.5rem;
+  }
+  .texto-importante {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 .footer {
   background-color: rgba(37, 37, 37, 0.4);
   height: 35vh;
