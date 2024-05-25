@@ -4,8 +4,37 @@
     justify-content: center;
     align-items: center;
 }
+.boton-estetico{
+ 
+    background-color: #7340c4; 
+            border: none; 
+            color: white; 
+            padding: 10px 25px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 4px 2px; 
+            cursor: pointer; 
+            border-radius: 12px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
 
+&:hover{
+    
+        background-color: #6020c7; 
+        transform: scale(1.05); 
+    
+}
+&:active{
+    background-color:#38048b; 
+    transform: scale(0.95); 
 
+        }
+
+        &__texto{
+            font-family: $tipografia-texto-importante;
+        }
+    }
 
 
 .caja-yt{
@@ -87,15 +116,15 @@
 }
 
 &__nombre{
-font-size: 1.2rem;
+font-size: 1rem;
 }
 
 &__visitas{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 &__fecha{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
