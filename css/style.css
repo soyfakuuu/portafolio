@@ -163,10 +163,10 @@ font-family: 'ADLaM Display'*/
 }
 .caja-presentacion__texto {
   font-size: 1.5rem;
-  font-style: unset;
+  font-style: initial;
   color: yellow;
-  font-family: "ADLaM Display";
-  background-image: linear-gradient(to right, hsl(273, 100%, 62%), rgba(63, 146, 255, 0.3764705882));
+  font-family: "Montserrat";
+  background-image: linear-gradient(to right, hsl(0, 0%, 100%), #00379e);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: moverTexto 3s ease infinite;

@@ -89,10 +89,10 @@ text-align: center;
 
 &__texto{
     font-size: 1.5rem;
-font-style:unset;
+font-style: initial;
     color: yellow;
-    font-family: $tipografia-texto-importante;
-    background-image: linear-gradient(to right, hsl(273, 100%, 62%), #3f92ff60);
+    font-family:  'Montserrat';
+    background-image: linear-gradient(to right, hsl(0, 0%, 100%), #00379e);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: moverTexto 3s ease infinite;
